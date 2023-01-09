@@ -1,6 +1,7 @@
 import subprocess 
 import pandas as pd
 
+print('Acessando seu computador...')
 Data = subprocess.check_output(['wmic', 'product', 'get', 'name']) 
 a = str(Data) 
 lista = []
